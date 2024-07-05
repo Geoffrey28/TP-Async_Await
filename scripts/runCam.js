@@ -9,6 +9,6 @@ export function runCam(constraints, video) {
             });
         })
         .catch(function (err) {
-            console.log(err.name + ": " + err.message);
+            console.log(err.name + ': ' + err.message);
         });
 }

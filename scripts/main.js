@@ -1,6 +1,7 @@
 import { getDevices, showDevicesList } from "./getDevice.js";
 import { runCam } from "./runCam.js";
 import { takePicture } from "./takePicture.js";
+import { savePicture } from "./savePicture.js";
 
 const selectCamForm = document.querySelector('#selectCamForm');
 const selectCam = document.querySelector('select');
@@ -41,4 +42,8 @@ video.addEventListener('play', () => {
 
 takePictureBtn.addEventListener('click', () => {
     takePicture(width, height, video, pictureContainer);
+});
+
+savePictureBtn.addEventListener('click', () => {
+    savePicture();
 });
